@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32.04" height="18.54" viewBox="0 0 32.04 18.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #202223;
+      }
+    </style>
+  </defs>
+  <title>icon-sad-smile</title>
+  <path class="cls-1" d="M10.66,5.4a2.36,2.36,0,1,1,4.71,0A2.35,2.35,0,0,1,13,7.81,2.4,2.4,0,0,1,10.66,5.4Zm12.78,0A2.37,2.37,0,0,1,25.77,3,2.4,2.4,0,0,1,28.15,5.4a2.36,2.36,0,1,1-4.72,0Z" transform="translate(-3.35 -2.99)"/>
+  <path class="cls-1" d="M4.93,21.53,3.35,19.08a27,27,0,0,1,32,0L33.8,21.53a25.45,25.45,0,0,0-14.43-4.64A25.45,25.45,0,0,0,4.93,21.53Z" transform="translate(-3.35 -2.99)"/>
+</svg>

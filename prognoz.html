@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Прогноз</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css?030317" rel="stylesheet" media="screen">
+
+<meta name="theme-color" content="#2b2f38">
+<meta name="msapplication-TileColor" content="#2b2f38">
+<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+</head>
+<body>
+	<div class="main-head-wrap">
+	<div class="main-head">
+		<a href="/" class="main-head__logo"><img src="img/logo-top.png" alt="Zenomania"></a>
+		<ul class="main-head__menu main-menu">
+			<li class="active"><a href="get-zen.html">Заработать ZEN</a></li>
+			<li><a href="take-zen.html">Потратить ZEN</a></li>
+			<li><a href="raitings.html">Рейтинг</a></li>
+			<li><a href="news.html">Новости</a></li>
+		</ul>
+		<div class="main-head__anons">
+			<p class="main-head__anons-title">Ближайший матч:</p>
+			<p class="main-head__anons-info">
+				25 декабря в 18:00 <br>
+				ВК Зенит-Казань — Динамо (Краснодар)
+			</p>
+			<div class="main-head__anons-btn">
+				<a href="#" class="btn">
+					<span>Купить билет</span>
+					<em>+200 ZEN</em>
+				</a>
+			</div>
+		</div><!-- main-head__anons -->
+	</div><!-- main-head -->
+</div><!-- main-head-wrap -->
+	
+	<div class="main-content">
+		<div class="top-note-wrap">
+	<div class="top-note">
+		<div class="top-note__burger">
+			<a class="top-note__burger-link" href="#">
+				<div class="burger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</a><!-- top-note__burger-link -->
+			<a class="top-note__burger-logo" href="/" >
+				<img src="img/svg/logo-top.svg" alt="">
+			</a>
+		</div><!-- top-note__burger -->
+		<div class="top-note__info notification-link-wrap">
+			<a href="#" class="notification-link">
+				<img src="img/svg/icons/icon-notification-bell.svg" alt="">
+				<p>На этой неделе вы можете заработать <span>49&nbsp;ZEN</span></p>
+			</a>
+
+			<div class="top-note__profile">
+				<a href="/" class="top-note__profile-link">
+					
+					<span><em>250 ZEN</em><span>Константин Краснодемьянский</span></span>
+					<img src="img/profile-photo.png" alt="">
+				</a>
+			</div>
+		</div><!-- notification-link-wrap -->
+		<div class="top-note__lk">
+			<a href="#" class="btn-exit" title="Выйти из профиля">
+				<span>Выйти</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="26.47" height="22.53" viewBox="0 0 26.47 22.53">
+					<path d="M17 19.53a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v5.2h2V3a3 3 0 0 0-3-3H3a3 3 0 0 0-3 3v16.53a3 3 0 0 0 3 3h13a3 3 0 0 0 3-3v-4.7h-2z"/>
+					<path d="M8.17 10.26h14v2h-14z"/>
+					<path d="M21.29 14.25l5.18-2.99-5.18-2.99v5.98z"/>
+				</svg>
+			</a>
+		</div><!-- top-note__lk -->
+	</div><!-- top-note -->
+</div><!-- top-note-wrap -->
+		<section class="prognoz-main-sec">
+
+		<div class="prognoz-main">
+			<div class="prognoz-main__list">
+				<div class="prognoz-main__item-wrap prognoz-main__item-wrap--future">
+					<div class="prognoz-main__item wrapper">
+
+						<div class="prognoz-main__item-about">
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/team-logo-1.jpg" alt="">
+								<p>Крылья Советов (Набережные Челны)</p>
+							</div><!-- prognoz-main__item-team-logo -->
+
+							<div class="prognoz-main__item-team-scores">
+								<div class="prognoz-main__item-team-score">
+									<p>Итог матча</p>
+									<span>— : —</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score active">
+									<p>Сделай прогноз</p>
+									<div class="prognoz-main__item-choose">
+										<p>Общий счет</p>
+										<form class="choose-form" name="">
+											<input type="tel" class="input-prognoz" name="" placeholder="—">
+											<span>:</span>
+											<input type="tel" class="input-prognoz" name="" placeholder="—">
+										</form>
+									</div>
+								</div><!-- prognoz-main__item-team-score -->
+							</div><!-- prognoz-main__item-team-scores -->
+
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/svg/zenit-team-logo.svg" alt="">
+								<p>ВК Зенит-Казань</p>
+							</div><!-- prognoz-main__item-team-logo -->
+						</div><!-- prognoz-main__item-about -->
+
+						<div class="prognoz-main__item-chooses">
+							<div class="prognoz-main__item-choose">
+								<p>1-я партия</p>
+								<form class="choose-form choose-form--mini" name="">
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+									<span>:</span>
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+								</form>
+							</div>
+							<div class="prognoz-main__item-choose">
+								<p>2-я партия</p>
+								<form class="choose-form choose-form--mini" name="">
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+									<span>:</span>
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+								</form>
+							</div>
+							<div class="prognoz-main__item-choose">
+								<p>3-я партия</p>
+								<form class="choose-form choose-form--mini" name="">
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+									<span>:</span>
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+								</form>
+							</div>
+							<div class="prognoz-main__item-choose">
+								<p>4-я партия</p>
+								<form class="choose-form choose-form--mini" name="">
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+									<span>:</span>
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+								</form>
+							</div>
+							<div class="prognoz-main__item-choose">
+								<p>5-я партия</p>
+								<form class="choose-form choose-form--mini" name="">
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+									<span>:</span>
+									<input type="tel" class="input-prognoz input-prognoz--mini" name="" placeholder="—">
+								</form>
+							</div>
+						</div><!-- prognoz-main__item-chooses -->
+
+						<form class="prognoz-main__item-team-wrap" name="team-list">
+							<div class="prognoz-main__item-team" id="team-list-to-game">
+								<p class="prognoz-main__item-team-title">Угадай состав Зенита на матч</p>
+								<div class="prognoz-main__item-team-list">
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-2" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-3" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-4" value="">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-5" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-6" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-7" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-8" value="">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-9" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-10" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-11" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-12" value="">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-13" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-14" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-15" value="">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-16" value="">
+									</a>
+								</div><!-- prognoz-main__item-team-list -->
+								<div class="prognoz-main__item-team-nav">
+									<span class="prognoz-main__item-done">
+										<svg xmlns="http://www.w3.org/2000/svg" width="33.12" height="26.62" viewBox="0 0 33.12 26.62">
+										  <defs>
+										    <style>
+										      .cls-1 { fill: #fff; } .cls-2 { fill: #11c5ef; }
+										    </style>
+										  </defs>
+										  <path class="cls-1" d="M13 26.62a13 13 0 0 1-13-13 13 13 0 0 1 13-13 13 13 0 0 1 13 13 13 13 0 0 1-13 13zm0-24a11 11 0 0 0-11 11 11 11 0 0 0 11 11 11 11 0 0 0 11-11 11 11 0 0 0-11-11z"/>
+										  <path class="cls-2" d="M13.83 23.53l-8.11-9.46 4.56-3.9 3.89 4.54L28.88 0l4.24 4.24-19.29 19.29z"/>
+										  <path class="cls-1" d="M13.94 20.59l-6.7-7.82 1.52-1.3 5.3 6.18L30.29 1.41l1.42 1.42-17.77 17.76z"/>
+										</svg>
+										<span>Состав выбран!</span>
+									</span>
+									<a href="#" class="btn btn--next"><span>Выбери самого результатаивного игрока<img src="img/svg/icons/icon-next-arrow.svg" alt=""></span></a>
+								</div>
+							</div><!-- prognoz-main__item-team -->
+
+							<div class="prognoz-main__item-team" id="team-list-to-best">
+								<p class="prognoz-main__item-team-title">Выбери самого результатаивного игрока</p>
+								<div class="prognoz-main__item-team-list">
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-1.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-2.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-3.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+									<a href="#" class="prognoz-main__item-player">
+										<img src="img/team-player-4.png" alt="">
+										<span>Мэтью Андерсон</span>
+										<input type="hidden" name="player-matching-1">
+									</a>
+								</div><!-- prognoz-main__item-team-list -->
+								<div class="prognoz-main__item-team-nav prognoz-main__item-team-nav--player">
+									<a href="#" class="btn btn--prev"><span><img src="img/svg/icons/icon-prev-arrow.svg" alt="">Вернуться к определению состава</span></a>
+									<span class="prognoz-main__item-done prognoz-main__item-done--right">
+										<svg xmlns="http://www.w3.org/2000/svg" width="33.12" height="26.62" viewBox="0 0 33.12 26.62">
+										  <defs>
+										    <style>
+										      .cls-1 { fill: #fff; } .cls-2 { fill: #11c5ef; }
+										    </style>
+										  </defs>
+										  <path class="cls-1" d="M13 26.62a13 13 0 0 1-13-13 13 13 0 0 1 13-13 13 13 0 0 1 13 13 13 13 0 0 1-13 13zm0-24a11 11 0 0 0-11 11 11 11 0 0 0 11 11 11 11 0 0 0 11-11 11 11 0 0 0-11-11z"/>
+										  <path class="cls-2" d="M13.83 23.53l-8.11-9.46 4.56-3.9 3.89 4.54L28.88 0l4.24 4.24-19.29 19.29z"/>
+										  <path class="cls-1" d="M13.94 20.59l-6.7-7.82 1.52-1.3 5.3 6.18L30.29 1.41l1.42 1.42-17.77 17.76z"/>
+										</svg>
+										<span>Игрок выбран!</span>
+									</span>
+								</div>
+							</div><!-- prognoz-main__item-team -->
+						</form><!-- prognoz-main__item-team -->
+
+						<div class="prognoz-main__item-date">
+							<p>21 декабря 2016 в 19:00</p>
+						</div><!-- prognoz-main__item-date -->
+					</div><!-- prognoz-main__item -->
+					
+				</div><!-- prognoz-main__item-wrap -->
+
+				<div class="prognoz-main__item-wrap prognoz-main__item-wrap--future">
+					<div class="prognoz-main__item wrapper">
+						
+
+						<div class="prognoz-main__item-about">
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/team-logo-3.png" alt="">
+								<p>ВК Локомотив Новосибирск</p>
+							</div><!-- prognoz-main__item-team-logo -->
+
+							<div class="prognoz-main__item-team-scores">
+								<div class="prognoz-main__item-team-score">
+									<p>Мой выигрыш</p>
+									<span>—</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score">
+									<p>Итог матча</p>
+									<span>— : —</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score">
+									<p>Мой прогноз</p>
+									<span>1 <em>:</em> 3</span>
+								</div><!-- prognoz-main__item-team-score -->
+							</div><!-- prognoz-main__item-team-scores -->
+
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/svg/zenit-team-logo.svg" alt="">
+								<p>ВК Зенит-Казань</p>
+							</div><!-- prognoz-main__item-team-logo -->
+						</div><!-- prognoz-main__item-about -->
+
+						<div class="prognoz-main__item-result-wrap">
+							<div class="prognoz-main__item-result-scores">
+								<div class="prognoz-main__item-result-score">
+									<p>1-я партия</p>
+									<span>20<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score">
+									<p>2-я партия</p>
+									<span>19<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score">
+									<p>3-я партия</p>
+									<span>15<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score">
+									<p>4-я партия</p>
+									<span>23<em>:</em>13</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score">
+									<p>5-я партия</p>
+									<span>—<em>:</em>—</span>
+								</div><!-- prognoz-main__item-result-score -->
+							</div><!-- prognoz-main__item-result-scores -->
+							<div class="prognoz-main__item-result-team">
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-match" src="img/svg/icons/icon-done-blue-big.svg" alt="">
+									<p>Я угадал состав!</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-player" src="img/team-player-1.png" alt="">
+									<p>Валентин Кротков</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+							</div><!-- prognoz-main__item-result-team -->
+						</div><!-- prognoz-main__item-result-wrap -->
+						
+						<div class="prognoz-main__item-date">
+							<p>21 декабря 2016 в 19:00</p>
+						</div><!-- prognoz-main__item-date -->
+					</div><!-- prognoz-main__item -->
+					
+				</div><!-- prognoz-main__item-wrap -->
+
+				<div class="prognoz-main__item-wrap prognoz-main__item-wrap--past">
+					<div class="prognoz-main__item wrapper">
+						
+
+						<div class="prognoz-main__item-about">
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/team-logo-3.png" alt="">
+								<p>ВК Локомотив Новосибирск</p>
+							</div><!-- prognoz-main__item-team-logo -->
+
+							<div class="prognoz-main__item-team-scores">
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--win-head">
+									<p>Мой выигрыш</p>
+									<span>10 ZEN</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--past">
+									<p>Итог матча</p>
+									<span>1 : 3</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--win">
+									<p>Мой прогноз</p>
+									<span>1 <em>:</em> 3</span>
+									<a href="#" class="more-score-info">Подробнее</a>
+								</div><!-- prognoz-main__item-team-score -->
+							</div><!-- prognoz-main__item-team-scores -->
+
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/svg/zenit-team-logo.svg" alt="">
+								<p>ВК Зенит-Казань</p>
+							</div><!-- prognoz-main__item-team-logo -->
+						</div><!-- prognoz-main__item-about -->
+
+						<div class="prognoz-main__item-result-wrap">
+							<div class="prognoz-main__item-result-scores">
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>1-я партия</p>
+									<span>20<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--lose">
+									<p>2-я партия</p>
+									<span>19<em>:</em>23</span>
+									<b>25:20</b>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>3-я партия</p>
+									<span>15<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>4-я партия</p>
+									<span>23<em>:</em>13</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>5-я партия</p>
+									<span>20<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+							</div><!-- prognoz-main__item-result-scores -->
+							<div class="prognoz-main__item-result-team">
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-match" src="img/svg/icons/icon-sad-smile-red.svg" alt="">
+									<p>Я не угадал состав</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-player prognoz-main__item-result-team-player--lose" src="img/team-player-1.png" alt="">
+									<p>Валентин Кротков</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+							</div><!-- prognoz-main__item-result-team -->
+						</div><!-- prognoz-main__item-result-wrap -->
+
+						<div class="prognoz-main__item-date">
+							<p>21 декабря 2016 в 19:00</p>
+						</div><!-- prognoz-main__item-date -->
+
+					</div><!-- prognoz-main__item -->
+					
+				</div><!-- prognoz-main__item-wrap -->
+
+				<div class="prognoz-main__item-wrap prognoz-main__item-wrap--past">
+					<div class="prognoz-main__item wrapper">
+						
+
+						<div class="prognoz-main__item-about">
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/team-logo-3.png" alt="">
+								<p>ВК Локомотив Новосибирск</p>
+							</div><!-- prognoz-main__item-team-logo -->
+
+							<div class="prognoz-main__item-team-scores">
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--lose-head">
+									<p>Мой выигрыш</p>
+									<span><img src="img/svg/icons/icon-sad-smile.svg" alt=""></span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--past">
+									<p>Итог матча</p>
+									<span>2 : 3</span>
+								</div><!-- prognoz-main__item-team-score -->
+								<div class="prognoz-main__item-team-score prognoz-main__item-team-score--lose">
+									<p>Мой прогноз</p>
+									<span>1 <em>:</em> 3</span>
+									<a href="#" class="more-score-info">Подробнее</a>
+								</div><!-- prognoz-main__item-team-score -->
+							</div><!-- prognoz-main__item-team-scores -->
+
+							<div class="prognoz-main__item-team-logo">
+								<img src="img/svg/zenit-team-logo.svg" alt="">
+								<p>ВК Зенит-Казань</p>
+							</div><!-- prognoz-main__item-team-logo -->
+						</div><!-- prognoz-main__item-about -->
+
+						<div class="prognoz-main__item-result-wrap">
+							<div class="prognoz-main__item-result-scores">
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>1-я партия</p>
+									<span>20<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--lose">
+									<p>2-я партия</p>
+									<span>19<em>:</em>23</span>
+									<b>25:20</b>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--win">
+									<p>3-я партия</p>
+									<span>15<em>:</em>23</span>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score prognoz-main__item-result-score--lose">
+									<p>4-я партия</p>
+									<span>23<em>:</em>13</span>
+									<b>— : —</b>
+								</div><!-- prognoz-main__item-result-score -->
+								<div class="prognoz-main__item-result-score">
+									<p>5-я партия</p>
+									<span>—<em>:</em>—</span>
+								</div><!-- prognoz-main__item-result-score -->
+							</div><!-- prognoz-main__item-result-scores -->
+							<div class="prognoz-main__item-result-team">
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-match" src="img/svg/icons/icon-sad-smile-red.svg" alt="">
+									<p>Я не угадал состав</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+								<div class="prognoz-main__item-result-team-one">
+									<img class="prognoz-main__item-result-team-player" src="img/team-player-1.png" alt="">
+									<p>Валентин Кротков</p>
+								</div><!-- prognoz-main__item-result-team-one -->
+							</div><!-- prognoz-main__item-result-team -->
+						</div><!-- prognoz-main__item-result-wrap -->
+
+						<div class="prognoz-main__item-date">
+							<p>21 декабря 2016 в 19:00</p>
+						</div><!-- prognoz-main__item-date -->
+
+					</div><!-- prognoz-main__item -->
+					
+				</div><!-- prognoz-main__item-wrap -->
+
+			</div><!-- prognoz-main__list -->
+			<div class="news__more news__more--prognoz">
+				<a href="#" class="news__more-link">Показать еще</a>
+			</div>
+		</div><!-- prognoz-main -->
+
+</section><!-- prognoz-main-sec -->
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.2.2.4.min.js"><\/script>')</script>
+<script src="js/assets.js?030317"></script>
+<script src="js/myscript.js?030317"></script>
+</body>
+</html>
