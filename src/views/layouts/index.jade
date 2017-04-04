@@ -1,0 +1,25 @@
+include ../helpers/variables
+include ../helpers/mixins
+
++script([], [
+  'app.js',
+])
+
+block changeVar
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+
+  body
+    //Header
+    block header
+      include ../blocks/header/template
+    //END-Header
+
+    //Content
+    .main-content
+      block content
+    //END-Content
+
+  include ../blocks/scripts/scripts

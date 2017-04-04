@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="4" height="30" viewBox="0 0 4 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #11c5ef;
+      }
+    </style>
+  </defs>
+  <title>btn-blue-wave-left</title>
+  <path class="cls-1" d="M3.25,0a3,3,0,0,1-3,3L0,3V7L.25,7a3,3,0,0,1,0,6L0,13V17l.25,0a3,3,0,0,1,0,6L0,23V27l.25,0a3,3,0,0,1,3,3H4V0Z"/>
+</svg>

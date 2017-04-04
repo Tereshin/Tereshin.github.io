@@ -1,0 +1,28 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1941" height="1938" viewBox="0 0 1941 1938">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="1082.21" cy="662.24" r="684.8" gradientTransform="matrix(1.47, 0, 0, -0.99, -623.89, 854.73)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9b2eef"/>
+      <stop offset="0.35" stop-color="#9a2cec"/>
+      <stop offset="0.59" stop-color="#9527e3"/>
+      <stop offset="0.64" stop-color="#9325e0"/>
+      <stop offset="1" stop-color="#6918b7"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" y1="-498.5" x2="1939" y2="-498.5" gradientTransform="matrix(1, 0, 0, -1, 0, 916)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6918b7"/>
+      <stop offset="0.88" stop-color="#6918b7"/>
+      <stop offset="1" stop-color="#6918b7"/>
+    </linearGradient>
+  </defs>
+  <title>bg-promo-presents-wide</title>
+  <polygon class="cls-1" points="969.75 202.25 0.02 0 0.02 404.5 0.02 525.44 0.02 889.29 0.02 895.39 969.75 892.34 1939.48 895.39 1941 889.29 1939.48 404.5 1939.48 125.32 1941 0 969.75 202.25"/>
+  <rect class="cls-2" y="891" width="1939" height="1047"/>
+</svg>

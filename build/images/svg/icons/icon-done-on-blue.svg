@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="33.12" height="26.62" viewBox="0 0 33.12 26.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #11c5ef;
+      }
+    </style>
+  </defs>
+  <title>icon-done-on-blue</title>
+  <path class="cls-1" d="M-42,22.5a13,13,0,0,1-13-13,13,13,0,0,1,13-13,13,13,0,0,1,13,13A13,13,0,0,1-42,22.5Zm0-24a11,11,0,0,0-11,11,11,11,0,0,0,11,11,11,11,0,0,0,11-11A11,11,0,0,0-42-1.5Z" transform="translate(55 4.12)"/>
+  <polygon class="cls-2" points="13.83 23.53 5.72 14.07 10.28 10.17 14.17 14.71 28.88 0 33.12 4.24 13.83 23.53"/>
+  <polygon class="cls-1" points="13.94 20.59 7.24 12.77 8.76 11.47 14.06 17.65 30.29 1.41 31.71 2.83 13.94 20.59"/>
+</svg>

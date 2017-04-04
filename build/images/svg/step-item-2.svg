@@ -1,0 +1,57 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="106.47" viewBox="0 0 123 106.47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="56" y1="-76.53" x2="56" y2="18.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9b2eef"/>
+      <stop offset="0.35" stop-color="#9a2cec"/>
+      <stop offset="0.59" stop-color="#9527e3"/>
+      <stop offset="0.64" stop-color="#9325e0"/>
+      <stop offset="1" stop-color="#6918b7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="55.05" y1="3.81" x2="55.05" y2="22.15" gradientTransform="translate(-6.84 17.84) rotate(-17.34)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset="0.35" stop-color="#e3e3e3"/>
+      <stop offset="0.59" stop-color="#dadada"/>
+      <stop offset="0.8" stop-color="#cbcbcb"/>
+      <stop offset="0.98" stop-color="#b5b5b5"/>
+      <stop offset="1" stop-color="#b3b3b3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="59" y1="10.63" x2="59" y2="115.97" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="107.5" y1="-7.38" x2="107.5" y2="60.22" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="120.5" y1="-10.93" x2="120.5" y2="54.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="101.5" y1="37.65" x2="101.5" y2="61.98" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <title>step-item-2</title>
+  <g>
+    <path class="cls-1" d="M7.5,4.47H99a13,13,0,0,1,13,13v9a13,13,0,0,1-13,13H13a13,13,0,0,1-13-13V12A7.5,7.5,0,0,1,7.5,4.47Z"/>
+    <rect class="cls-2" x="13.92" y="11.35" width="82.26" height="39.95" transform="translate(11.84 -14.99) rotate(17.34)"/>
+    <path class="cls-3" d="M104.83,19.47H7.33A7.36,7.36,0,0,1,0,12v81.5a12.86,12.86,0,0,0,12.83,13h92a13.14,13.14,0,0,0,13.17-13v-61A13.14,13.14,0,0,0,104.83,19.47Z"/>
+    <rect class="cls-4" x="92" y="50.47" width="31" height="25" rx="7.5" ry="7.5"/>
+    <path class="cls-5" d="M118,44.91V69A7.38,7.38,0,0,0,123,62V52A7.38,7.38,0,0,0,118,44.91Z"/>
+    <circle class="cls-6" cx="101.5" cy="62.97" r="4.5"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "name": "zenomania.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tereshin/zenomania.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tereshin/zenomania.github.io/issues"
+  },
+  "homepage": "https://github.com/Tereshin/zenomania.github.io#readme"
+}
