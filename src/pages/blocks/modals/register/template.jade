@@ -1,0 +1,21 @@
+extends ../template
+
+append modal-variables
+	-idModal = 'ag-register'
+
+block modal-content
+	form.modal-form
+		label
+			input.input-text(type='text' required)
+			span Ваше имя
+		label
+			input.input-text(type='text' required)
+			span Фамилия
+		label
+			input.input-text.input-text--phone(type='tel' required)
+			span Номер телефона
+		label
+			input.input-text(type='password' required)
+			span Пароль
+		.form-checkbox
+		button.btn-submit.btn-submit--full(data-form="submit") Зарегистрироваться

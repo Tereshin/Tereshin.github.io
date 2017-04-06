@@ -1,0 +1,30 @@
+include ../helpers/variables
+include ../helpers/mixins
+
++script([], [
+  'index.js',
+])
+
+block changeVar
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+
+  body
+    //Header
+    block header
+      include ../blocks/header/template
+    //END-Header
+
+    //Content
+    .main-content
+      block content
+    //END-Content
+
+  block additional-content
+    include ../blocks/modals/auth/template
+    include ../blocks/modals/register/template
+
+  block scripts
+    include ../blocks/scripts/scripts

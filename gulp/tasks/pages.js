@@ -2,12 +2,12 @@
 
 module.exports = function(options) {
 
-  gulp.task('templates', function() {
-    return gulp.src(path.src.pages)
+  return function() {
+    return gulp.src(options.src)
                 .pipe($.jade({
                   pretty: true
                 }))
-                .pipe(gulp.dest(path.build.html))
-  });
+                .pipe(gulp.dest(options.buildPath))
+  }
 
 }

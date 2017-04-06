@@ -1,78 +1,91 @@
 'use strict';
 
-const gulp = require('gulp'),
-      jade = require('gulp-jade'),
-      watch = require('gulp-watch'),
-      scss = require('gulp-scss'),
-      clean = require('gulp-clean'),
-      concat = require('gulp-concat'),
-      debug = require('gulp-debug'),
-      gulpIf = require('gulp-if'),
-      sourcemaps = require('gulp-sourcemaps'),
-      del = require('del'),
-      runSequence = require('run-sequence');
+const gulp = global.gulp = require('gulp'),
+      $ = global.$ = require('gulp-load-plugins')({
+        rename: {
+          'gulp-sass-bulk-import': 'bulkSass'
+        },
+      });
+
+const runSequence = require('run-sequence'),
+      ensure = require('ensure.js');
 
 var isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 
-var path = {
+var options = {
 
   build: {
-    html: 'build/views',
-    css: 'build/css/',
-    js: 'build/js/',
+    pages: 'build/views',
+    styles: 'build/styles/',
+    scripts: 'build/js/',
     images: 'build/images/',
     fonts: 'build/fonts/'
   },
 
   src: {
-    js: 'src/js/**/*.js',
-    jade: 'src/views/**/*.jade',
+    js: 'src/scripts/**/*.js',
+    jsComponents: 'src/pages/blocks/**/*.js',
     styles: 'src/styles/styles.scss',
+    images: 'src/images/**/**',
+    fonts: 'src/fonts/**',
+    jade: 'src/pages/**/*.jade',
+    pages: 'src/pages/**.jade'
+  },
+
+  clean: 'build',
+
+  tasks: {
+    path: './gulp/tasks/',
+    list: [
+      'clean',
+      'scripts',
+      'styles',
+      'pages',
+      'images',
+      'fonts'
+    ],
+    clean: 'build',
+    styles: [
+      'node_modules/jquery-fancybox/source/scss/jquery.fancybox.scss',
+      'node_modules/flickity/dist/flickity.css',
+      'src/styles/styles.scss',
+    ],
+    scripts: [
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/jquery-fancybox/source/js/jquery.fancybox.pack.js',
+      'node_modules/flickity/dist/flickity.pkgd.js',
+      'src/scripts/**/*.js',
+      'src/pages/blocks/**/*.js'
+    ],
+    pages: 'src/pages/**.jade',
     images: 'src/images/**/**',
     fonts: 'src/fonts/**'
   },
 
-  clean: 'build'
-
 }
 
-gulp.task('clean', function() {
-  return del(path.clean);
+function lazyRequireTasks(taskName, path, taskOptions) {
+  taskOptions.taskName = taskName;
+  if (taskName !== 'clean') {
+    taskOptions.buildPath = options.build[taskName];
+  }
+
+  gulp.task(taskName, function(callback) {
+    var task = require(path).call(this, taskOptions);
+
+    return task(callback);
+  });
+}
+
+options.tasks.list.forEach(function(task, i, list) {
+  lazyRequireTasks(task, options.tasks.path + task, {
+    src: options.tasks[task]
+  });
 });
 
-gulp.task('templates', function() {
-  return gulp.src(path.src.jade)
-              .pipe(jade({
-                pretty: true
-              }))
-              .pipe(gulp.dest(path.build.html))
-});
-
-gulp.task('styles', function() {
-  return gulp.src(path.src.styles)
-              .pipe(gulpIf(isDev, sourcemaps.init()))
-              .pipe(scss())
-              .pipe(gulpIf(isDev, sourcemaps.write()))
-              .pipe(gulp.dest(path.build.css))
-});
-
-gulp.task('js', function() {
-  return gulp.src(path.src.js)
-              .pipe(gulp.dest(path.build.js))
-});
-
-gulp.task('images', function() {
-  return gulp.src(path.src.images)
-              .pipe(gulp.dest(path.build.images))
-});
-
-gulp.task('fonts', function() {
-  return gulp.src(path.src.fonts)
-              .pipe(gulp.dest(path.build.fonts))
-});
 
 gulp.task('build', function() {
-  return runSequence('clean', ['styles', 'js', 'templates', 'fonts', 'images']);
+  return runSequence('clean', ['styles', 'scripts', 'pages', 'fonts', 'images']);
 });
 

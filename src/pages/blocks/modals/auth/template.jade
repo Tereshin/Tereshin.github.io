@@ -1,0 +1,16 @@
+extends ../template
+
+append modal-variables
+	-idModal = 'ag-enter'
+
+block modal-content
+	form.modal-form(data-form="form")
+		label
+			input.input-text.input-text--phone(type='tel' required)
+			span Номер телефона
+		label
+			input.input-text(type='password' required)
+			span Пароль
+		.form-descr
+			a.form-link(href='#') Забыли пароль?
+		button.btn-submit(data-form="submit") Войти
