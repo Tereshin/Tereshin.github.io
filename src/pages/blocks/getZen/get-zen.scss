@@ -1,0 +1,73 @@
+.get-zen {
+  
+  &-title {
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+
+  &-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px 40px;
+    &__item {
+      min-width: 100px;
+      text-align: center;
+      a {
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: #FFF;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        color: #11C5EF;
+        .get-zen-list__item-icon {
+          opacity: 0;
+          &._hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      &-top {
+        position: relative;
+        width: 100%;
+        height: 80px;
+      }
+      &-icon {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        &._hover {
+          top: 0;
+          opacity: 0;
+          &.get-zen-item__icon--abonement {
+            top: 7px;
+          }
+        }
+        &--reg-ticket, 
+        &--abonement {
+          top: 10px;
+        }
+        &--friend {
+          top: 4px;
+        }
+        &--repost, 
+        &--prognoz {
+          top: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+

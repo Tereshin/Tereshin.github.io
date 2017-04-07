@@ -29,8 +29,8 @@ var options = {
     styles: 'src/styles/styles.scss',
     images: 'src/images/**/**',
     fonts: 'src/fonts/**',
-    jade: 'src/pages/**/*.jade',
-    pages: 'src/pages/**.jade'
+    pagesAccount: 'src/pages/account/**.jade',
+    pages: 'src/pages/*.jade'
   },
 
   clean: 'build',
@@ -58,7 +58,10 @@ var options = {
       'src/scripts/**/*.js',
       'src/pages/blocks/**/*.js'
     ],
-    pages: 'src/pages/**.jade',
+    pages: [
+      'src/pages/**.jade',
+      'src/pages/account/**.jade'
+    ],
     images: 'src/images/**/**',
     fonts: 'src/fonts/**'
   },

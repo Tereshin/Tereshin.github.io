@@ -1,0 +1,23 @@
+.section {
+  position: relative;
+  padding: 30px 0;
+  &._getZen {
+    background-color: #2F2F30;
+  }
+  &._achievements {
+    background-color: #1E1E20;
+  }
+  &-title {
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+  }
+  &-inner {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}

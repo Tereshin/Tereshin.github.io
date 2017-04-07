@@ -2,29 +2,31 @@ include ../helpers/variables
 include ../helpers/mixins
 
 +script([], [
-  'index.js',
+	'index.js',
 ])
 
 block changeVar
+	-data = index
 
 doctype html
 html(lang='ru')
-  include ../blocks/head/head
+	include ../blocks/head/head
 
-  body
-    //Header
-    block header
-      include ../blocks/header/template
-    //END-Header
+	body
+	
+		block header
+			include ../blocks/header/template
 
-    //Content
-    .main-content
-      block content
-    //END-Content
+		block content
 
-  block additional-content
-    include ../blocks/modals/auth/template
-    include ../blocks/modals/register/template
+		block footer
+			include ../blocks/footer/template
 
-  block scripts
-    include ../blocks/scripts/scripts
+
+		block additional-content
+			include ../blocks/modals/auth/template
+			include ../blocks/modals/register/template
+			//- include ../blocks/modals/video/template
+
+		block scripts
+			include ../blocks/scripts/scripts

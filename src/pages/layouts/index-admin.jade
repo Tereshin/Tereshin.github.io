@@ -1,19 +1,26 @@
 include ../helpers/variables
 include ../helpers/mixins
 
+
++script([], [
+	'index.js',
+])
+
 block changeVar
+	-data = account
+	-sidebar = data.sidebar
 
 doctype html
 html(lang='ru')
-  include ../blocks/head/head
+	include ../blocks/head/head
 
-  body
-    //Header
-    block header
-      include ../blocks/header/template
-    //END-Header
+	body
+		
+		include ../blocks/sidebar/template
+		
+		.main-content
+			include ../blocks/notifications/template
+			block content
 
-    //Content
-    .main-content
-      block content
-    //END-Content
+		block scripts
+			include ../blocks/scripts/scripts

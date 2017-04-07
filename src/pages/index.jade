@@ -1,70 +1,32 @@
 extends layouts/index
 
 append changeVar
+  -steps = data.steps.items
+  -prizes = data.prizes.items
 
 block content
   section.steps-main-sec
     .wrapper-promo
       .steps-main
-        .steps-main__item-wrap
-          .steps-main__item
-            .steps-main__item-img.steps-main__item-img--1
-              img(src='../images/svg/step-item-1.svg', alt='')
-            span.steps-main__item-title Регистрируйся в Зеномании
-            span.steps-main__item-descr Делай прогнозы, репости записи, приглашай друзей и многое другое
-        .steps-main__item-wrap
-          .steps-main__item
-            .steps-main__item-img.steps-main__item-img--2
-              img(src='../images/svg/step-item-2.svg', alt='')
-            span.steps-main__item-title Зарабатывай ZEN
-            span.steps-main__item-descr Делай прогнозы, репости записи, приглашай друзей и многое другое
-        .steps-main__item-wrap
-          .steps-main__item
-            .steps-main__item-img.steps-main__item-img--3
-              img(src='../images/svg/step-item-3.svg', alt='')
-            span.steps-main__item-title Получай бейджи
-            span.steps-main__item-descr Делай прогнозы, репости записи, приглашай друзей и многое другое
-        .steps-main__item-wrap
-          .steps-main__item
-            .steps-main__item-img.steps-main__item-img--4
-              img(src='../images/svg/step-item-4.svg', alt='')
-            span.steps-main__item-title Трать ZEN на уникальные призы
-            span.steps-main__item-descr Делай прогнозы, репости записи, приглашай друзей и многое другое
+        each step, i in steps
+          .steps-main__item-wrap
+            .steps-main__item
+              .steps-main__item-img.steps-main__item-img--1
+                img(src='#{step.image}' alt='')
+              span.steps-main__item-title #{step.title}
+              span.steps-main__item-descr #{step.desc}
+
       h2.steps-main-title Главные призы этого сезона
   section.presents-main-sec
     .wrapper-promo
       .presents-main
-        .presents-main__one-wrap
-          .presents-main__one
-            span.presents-main__one-img.presents-main__one-img--1
-              img(src='../images/svg/present-main-1.svg', alt='')
-            span.presents-main__one-descr Абонемент на новый сезон
-        .presents-main__one-wrap
-          .presents-main__one
-            span.presents-main__one-img.presents-main__one-img--2
-              img(src='../images/svg/present-main-2.svg', alt='')
-            span.presents-main__one-descr Полет на игру с командой
-        .presents-main__one-wrap
-          .presents-main__one
-            span.presents-main__one-img.presents-main__one-img--3
-              img(src='../images/svg/present-main-3.svg', alt='')
-            span.presents-main__one-descr Поездка в Сочи на межкон­тинентальный кубок по пляжному волейболу
-        .presents-main__one-wrap
-          .presents-main__one
-            span.presents-main__one-img.presents-main__one-img--4
-              img(src='../images/svg/present-main-4.svg', alt='')
-            span.presents-main__one-descr Игровая футболка с автографами
+        each prize, i in prizes
+          .presents-main__one-wrap
+            .presents-main__one
+              span.presents-main__one-img.presents-main__one-img--1
+                img(src='#{prize.image}' alt='')
+              span.presents-main__one-descr #{prize.title}
+        
     .presents-main-begin
-      a.btn.btn--blue-trans.btn--bigger(href='#', data-ag='ag-register') Начать
-    .presents-main-footer-wrap
-      .presents-main-footer.wrapper-promo
-        .presents-main-footer__about
-          span © Zenomania
-          a(href='#')
-            span Правила участия
-        .presents-main-footer__apps
-          a(href='#', target='_blank')
-            img(src='../images/svg/app-store.svg', alt='')
-          a(href='#', target='_blank')
-            img(src='../images/svg/app-store-android.svg', alt='')
+      a.btn.btn--blue-trans.btn--bigger(href='#', data-ag='ag-register') #{data.buttons.start}
 

@@ -8,6 +8,11 @@ module.exports = function(options) {
                 .pipe($.concat('styles.css'))
                 .pipe($.bulkSass())
                 .pipe($.sass())
+                .pipe($.autoprefixer({
+                  browsers: ['> 1%'],
+                  cascade: false
+                }))
+                .pipe($.minifyCss())
                 .pipe(gulp.dest(options.buildPath)); 
   }
 

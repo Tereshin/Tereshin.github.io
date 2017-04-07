@@ -15764,16 +15764,16 @@ $(window).resize(windowSize()); // при изменении размеров
 /**************************************************
 	Burger Open
 ***************************************************/
-	$('.top-note__burger-link').click(function(){
-		$('.top-note__burger-link').toggleClass('open');
+	$('.notifications__burger-link').click(function(){
+		$('.notifications__burger-link').toggleClass('open');
 		$(this).find('.burger-icon').toggleClass('open');
 		$('.main-head-wrap').toggleClass('open');
 	});
 
 	$('.main-head-wrap').click(function(event) {
 		/* Act on the event */
-		$('.top-note__burger-link').removeClass('open');
-		$('.top-note__burger-link .burger-icon').removeClass('open');
+		$('.notifications__burger-link').removeClass('open');
+		$('.notifications__burger-link .burger-icon').removeClass('open');
 		$('.main-head-wrap').removeClass('open');
 	}).children().click(function(e){
 			e.stopPropagation();
@@ -16055,6 +16055,14 @@ blocks.auth = {
   ajaxPost: function() {
     var _this = this;
 
+  }
+
+}
+
+blocks.video = {
+
+  init: function() {
+    
   }
 
 }

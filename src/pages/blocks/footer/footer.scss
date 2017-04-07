@@ -1,0 +1,39 @@
+.footer {
+  background: #E3E7E8;
+  &-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #E3E7E8;
+  }
+  &_about {
+    a {
+      color: #000;
+      &:hover span {
+        color: #11C5EF;
+      }
+    }
+    span {
+      display: inline-block;
+      margin-right: 50px;
+      font-size: 18px;
+      color: #000;
+      line-height: 1.22222222;
+      transition: all 0.3s ease;
+    }
+  }
+  &__apps {
+    > a {
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  }
+}

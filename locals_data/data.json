@@ -1,0 +1,117 @@
+{
+  "index": {
+    "buttons": {
+      "register": "Зарегистрироваться",
+      "login": "Войти",
+      "start": "Начать"
+    },
+    "steps": {
+      "title": "Как это работает",
+      "items": [
+        {
+          "title": "Регистрируйся в Зеномании",
+          "image": "../images/svg/step-item-1.svg",
+          "desc": "Делай прогнозы, репости записи, приглашай друзей и многое другое"
+        },
+        {
+          "title": "Зарабатывай ZEN",
+          "image": "../images/svg/step-item-2.svg",
+          "desc": "Делай прогнозы, репости записи, приглашай друзей и многое другое"
+        },
+        {
+          "title": "Получай бейджи",
+          "image": "../images/svg/step-item-3.svg",
+          "desc": "Делай прогнозы, репости записи, приглашай друзей и многое другое"
+        },
+        {
+          "title": "Трать ZEN на уникальные призы",
+          "image": "../images/svg/step-item-4.svg",
+          "desc": "Делай прогнозы, репости записи, приглашай друзей и многое другое"
+        }
+      ]
+    },
+    "prizes": {
+      "title": "Главные призы этого сезона",
+      "items": [
+        {
+          "title": "Абонемент на новый сезон",
+          "image": "../images/svg/present-main-1.svg"
+        },
+        {
+          "title": "Полет на игру с командой",
+          "image": "../images/svg/present-main-2.svg"
+        },
+        {
+          "title": "Поездка в Сочи на межконтинентальный кубок по пляжному волейболу",
+          "image": "../images/svg/present-main-3.svg"
+        },
+        {
+          "title": "Игровая футболка с автографами",
+          "image": "../images/svg/present-main-4.svg"
+        }
+      ]
+    }
+  },
+  "account": {
+    "sidebar": {
+      "menu": [
+        {
+          "title": "Заработать ZEN",
+          "href": "get-zen.html"
+        },
+        {
+          "title": "Потратить ZEN",
+          "href": "take-zen.html"
+        },
+        {
+          "title": "Рейтинг",
+          "href": "raitings.html"
+        },
+        {
+          "title": "Новости",
+          "href": "news.html"
+        }
+      ],
+      "anons": {
+        "title": "Ближайший матч:",
+        "date": "25 декабря в 18:00",
+        "opponents": "ВК Зенит-Казань - Динамо (Краснодар)"
+      }
+    },
+    "getZen": {
+      "title": "Заработай ZEN",
+      "items": [
+        {
+          "title": "Зарегистрировать <br> билет",
+          "href": "get-zen.html",
+          "image": "../images/svg/get-zen-reg-ticket.svg",
+          "imageHover": "../images/svg/get-zen-reg-ticket-hover.svg"
+        },
+        {
+          "title": "Прикрепить <br> абонемент",
+          "href": "get-zen.html",
+          "image": "../images/svg/get-zen-abonement.svg",
+          "imageHover": "../images/svg/get-zen-abonement-hover.svg"
+        },
+        {
+          "title": "Пригласить <br> друга",
+          "href": "get-zen.html",
+          "image": "../images/svg/get-zen-invite-friend.svg",
+          "imageHover": "../images/svg/get-zen-invite-friend-hover.svg"
+        },
+        {
+          "title": "Сделать <br> репост",
+          "href": "get-zen.html",
+          "image": "../images/svg/get-zen-repost.svg",
+          "imageHover": "../images/svg/get-zen-repost-hover.svg"
+        },
+        {
+          "title": "Сделать <br> прогноз",
+          "href": "prognoz.html",
+          "image": "../images/svg/get-zen-prognoz.svg",
+          "imageHover": "../images/svg/get-zen-prognoz-hover.svg"
+        }
+      ]
+    }
+  }
+}

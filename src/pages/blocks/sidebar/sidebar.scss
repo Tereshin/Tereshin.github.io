@@ -1,0 +1,87 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidebar-width;
+  min-height: 100vh;
+  z-index: 5;
+  transition: all 0.3s ease;
+  &-inner {
+    position: relative;
+    width: $sidebar-width;
+    height: 100vh;
+    background: #11C5EF;
+    transition: all 0.3s ease;
+  }
+  &__logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &-menu {
+    padding-top: 20px;
+    &__item {
+      position: relative;
+      > a {
+        display: block;
+        font-size: 18px;
+        color: #FFF;
+        font-family: "Avenir Next Cyr", sans-serif;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        padding: 12px 0 10px 32px;
+        &:hover {
+          background-color: #0BB3E0;
+        }
+      }
+      &._active {
+        > a {
+          color: #000;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          height: 3px;
+          width: 18px;
+          background: #000;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  &__anons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #0BB3E0;
+    &-title {
+      padding-bottom: 10px;
+      padding-left: 24px;
+      padding-right: 24px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &-info {
+      padding-bottom: 12px;
+      padding-left: 24px;
+      padding-right: 24px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &-btn {
+      text-align: center;
+    }
+  }
+}

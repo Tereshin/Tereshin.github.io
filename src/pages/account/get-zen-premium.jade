@@ -1,0 +1,66 @@
+extends ../layouts/index-admin
+
+append changeVar
+
+block content
+	section.get-zens-sec
+		.get-zens
+			.get-zens__item-wrap.get-zens__item-wrap--black
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-scan.svg', alt='')
+					.get-zens__item-info
+						p.get-zens__item-title Зарегестрируй билет
+						form.get-zens__item-form
+							input.input-text.input-text--ticket(type='tel', placeholder='X XXXXXX XXXXXX')
+							button.btn-submit Отправить +200 ZEN
+						p.get-zens__item-note
+							| Зарегистрировать можно только один купленный билет за матч. ZENы зачисляются в соответствии со схемой начисления ZENов. Регистрация билета на матч открывается на следующий день после того, как матч состоялся.
+			.get-zens__item-wrap.get-zens__item-wrap--black
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-promo.svg', alt='')
+					.get-zens__item-info
+						p.get-zens__item-title Зарегестрируй промо-код
+						form.get-zens__item-form
+							input.input-text.input-text--ticket(type='tel', placeholder='X XXXXXX XXXXXX')
+							button.btn-submit Отправить
+			.get-zens__item-wrap.get-zens__item-wrap--gray
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-prediction.svg', alt='')
+					.get-zens__item-info.get-zens__item-info--black
+						p.get-zens__item-title Сделай прогноз
+						p.get-zens__item-descr Угадай счет и лучшего игрока в предстоящих матчах Зенита
+						.get-zens__item-form
+							a.btn-submit.btn-submit--waved(href='#') Получить до 50 ZEN
+			.get-zens__item-wrap.get-zens__item-wrap--orange
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-attr.svg', alt='')
+					.get-zens__item-info
+						p.get-zens__item-title Зарегестрируй атрибутику
+						p.get-zens__item-descr Получай 10% в виде ZEN от каждой покупки в фирменном магазине Зенит
+						.get-zens__item-form
+							a.btn-submit.btn-submit--waved(href='#') Получить 10% от чека
+			.get-zens__item-wrap.get-zens__item-wrap--purple
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-friend.svg', alt='')
+					.get-zens__item-info
+						p.get-zens__item-title Пригласи друга
+						p.get-zens__item-descr
+							| Отправь приглашение другу на e-mail или пришли ему эту ссылку 
+							br
+							a(href='#') http://zenomania.ru/join?refrr=79376268300
+						.get-zens__item-form
+							a.btn-submit.btn-submit--waved(href='#') Получить 100 ZEN
+			.get-zens__item-wrap.get-zens__item-wrap--black
+				.get-zens__item.clearafter
+					.get-zens__item-img
+						img(src='img/svg/ticket-abonement.svg', alt='')
+					.get-zens__item-info
+						p.get-zens__item-title Зарегестрируй абонемент
+						p.get-zens__item-descr Регестрируя абонемент, ты получаешь премиум-аккаунт
+						.get-zens__item-form
+							a.btn-submit.btn-submit--waved-purple(href='#') Получить 700 ZEN
