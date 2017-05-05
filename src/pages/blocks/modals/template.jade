@@ -1,7 +1,7 @@
 block modal-variables
 	-var idModal
+	-var controllerName
 
-
-.ag-modal.ag-modal--form(id="#{idModal || ''}")
+.ag-modal.ag-modal--form(id="#{idModal || ''}" ng-controller="#{controllerName}")
 	block modal-content
 

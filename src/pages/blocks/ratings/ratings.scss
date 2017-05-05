@@ -1,0 +1,22 @@
+.ratings {
+  &-list {
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 20px 100px;
+      border-bottom: 1px solid #E0E2E2;
+      counter-increment: item-index;
+      &:before {
+        content: counter(item-index);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        font-weight: 500;
+        left: 50px;
+      }
+    }
+  }
+}

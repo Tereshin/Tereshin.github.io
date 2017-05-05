@@ -1,0 +1,22 @@
+-var anons = sidebar.anons
+
+.sidebar
+  .sidebar-inner
+    a.sidebar__logo(href='account.html')
+      img(src='../images/logo-top.png', alt='Zenomania')
+    
+    ul.sidebar-menu
+      each item, i in sidebar.menu
+        li.sidebar-menu__item(class="#{i == sidebarId ? '_active' : ''}")
+          a(href='#{item.href}') #{item.title}
+    
+    .sidebar__anons
+      p.sidebar__anons-title #{anons.title}
+      p.sidebar__anons-info
+        | #{anons.date}
+        br
+        | #{anons.opponents}
+      .sidebar__anons-btn
+        a.btn(href='#')
+          span Купить билет
+          em +200 ZEN

@@ -9,15 +9,25 @@ blocks.auth = {
   },
 
   submitHandler: function() {
-    var _this = this;
-    $(_this.authForm).on('submit', function(e) {
-      console.log(e);
-    });
+    // var _this = this;
+    // $(_this.authForm).on('submit', function(e) {
+    //   _this.loginPost();
+    // });
   },
 
-  ajaxPost: function() {
-    var _this = this;
-
+  loginPost: function() {
+    // var _this = this;
+    // $.ajax({
+    //   url: 'http://127.0.0.1:8887/login',
+    //   type: 'POST',
+    //   data: $(_this.authForm).serialize(),
+    //   success: function(response) {
+    //     console.log(response);
+    //   },
+    //   error: function(response) {
+    //     console.log(response);
+    //   }
+    // });
   }
 
 }

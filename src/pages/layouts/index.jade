@@ -9,10 +9,10 @@ block changeVar
 	-data = index
 
 doctype html
-html(lang='ru')
+html(lang='ru' ng-app="app")
 	include ../blocks/head/head
 
-	body
+	body(ng-controller="indexCtrl")
 	
 		block header
 			include ../blocks/header/template

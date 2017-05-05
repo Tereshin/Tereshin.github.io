@@ -1,16 +1,15 @@
 $(document).ready(function() {
 
-var windowWidth, windowHeight;
-function windowSize() {
-	windowWidth = $(window).width();
-	windowHeight = $(window).height();
-}
-$(window).load(windowSize()); // при загрузке
-$(window).resize(windowSize()); // при изменении размеров
+	var windowWidth, windowHeight;
+	function windowSize() {
+		windowWidth = $(window).width();
+		windowHeight = $(window).height();
+	}
+	// $(window).load(windowSize()); // при загрузке
+	// $(window).resize(windowSize()); // при изменении размеров
 
-/**************************************************
-	Burger Open
-***************************************************/
+
+
 	$('.notifications__burger-link').click(function(){
 		$('.notifications__burger-link').toggleClass('open');
 		$(this).find('.burger-icon').toggleClass('open');
@@ -25,26 +24,16 @@ $(window).resize(windowSize()); // при изменении размеров
 	}).children().click(function(e){
 			e.stopPropagation();
 	});
-/**************************************************
-	End Burger Open
-***************************************************/
 
 
-/**************************************************
-	Masked Input
-***************************************************/
 	$("input.input-text--phone").mask("+7 (999) 999-99-99", {autoclear: false});
 	$("input.input-text--ticket").mask("9 999999 999999", {autoclear: false, placeholder:"X XXXXXX XXXXXX"});
 	$("input.input-prognoz").mask("9", {autoclear: false, placeholder:""});
 	$("input.input-prognoz--mini").mask("99", {autoclear: false, placeholder:""});
-/**************************************************
-	End Masked Input
-***************************************************/
 
 
-/**************************************************
-	Prognoz Open
-***************************************************/
+
+
 	if ($('.prognoz-main__item-team-score .more-score-info').length) {
 		var moreLink = $('.prognoz-main__item-team-score .more-score-info');
 		var moreInfo = moreLink.parents('.prognoz-main__item-about').siblings('.prognoz-main__item-result-wrap');
@@ -64,14 +53,8 @@ $(window).resize(windowSize()); // при изменении размеров
 		});
 	}
 	
-/**************************************************
-	End Prognoz Open
-***************************************************/
 
 
-/**************************************************
-	Prognoz Player Choose
-***************************************************/
 	if ($('#team-list-to-game').length) {
 		var activePlayers = 7;
 
@@ -129,34 +112,24 @@ $(window).resize(windowSize()); // при изменении размеров
 			console.log(activePlayers);
 		});
 	}
-/**************************************************
-	End Prognoz Player Choose
-***************************************************/
 
 
-/**************************************************
-	Hinting
-***************************************************/
 	var inOneMinutes = new Date(new Date().getTime() + 1 * 10 * 1000);
-	$(window).load(function(){
+	// $(window).load(function(){
 
-		if(windowWidth > 960 && (!(Cookies.get('hint-giraffe')))) {
-			setTimeout(function(){
-				$('.hinting-sec').addClass('active');
-			}, 500);
-			$('.hinting-sec').on('click', function(event) {
-				event.preventDefault();
-				$(this).removeClass('active');
-			});
-			Cookies.set('hint-giraffe', 'true', inOneMinutes);
-		}
+	// 	if(windowWidth > 960 && (!(Cookies.get('hint-giraffe')))) {
+	// 		setTimeout(function(){
+	// 			$('.hinting-sec').addClass('active');
+	// 		}, 500);
+	// 		$('.hinting-sec').on('click', function(event) {
+	// 			event.preventDefault();
+	// 			$(this).removeClass('active');
+	// 		});
+	// 		Cookies.set('hint-giraffe', 'true', inOneMinutes);
+	// 	}
 
-	});
+	// });
 	
-	
-/**************************************************
-	End Hinting
-***************************************************/
 
 
 });

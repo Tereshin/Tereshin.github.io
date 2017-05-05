@@ -1,0 +1,41 @@
+block changeVar
+  -steps = index.steps.items
+  -prizes = index.prizes.items
+
+block header
+  include ../blocks/header/template
+
+section.steps-main-sec
+  .wrapper-promo
+    .steps-main
+      each step, i in steps
+        .steps-main__item-wrap
+          .steps-main__item
+            .steps-main__item-img.steps-main__item-img--1
+              img(src='#{step.image}' alt='')
+            span.steps-main__item-title #{step.title}
+            span.steps-main__item-descr #{step.desc}
+
+    h2.steps-main-title Главные призы этого сезона
+section.presents-main-sec
+  .wrapper-promo
+    .presents-main
+      each prize, i in prizes
+        .presents-main__one-wrap
+          .presents-main__one
+            span.presents-main__one-img.presents-main__one-img--1
+              img(src='#{prize.image}' alt='')
+            span.presents-main__one-descr #{prize.title}
+      
+  .presents-main-begin
+    a.btn.btn--blue-trans.btn--bigger(href='#', data-ag='ag-register') #{data.buttons.start}
+
+block footer
+  include ../blocks/footer/template
+
+
+block additional-content
+  include ../blocks/modals/auth/template
+  include ../blocks/modals/register/template
+
+

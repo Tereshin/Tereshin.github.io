@@ -2,20 +2,21 @@ extends ../template
 
 append modal-variables
 	-idModal = 'ag-register'
+	-controllerName = 'registerCtrl'
 
 block modal-content
-	form.modal-form
+	form.modal-form(ng-submit="registerSubmit()")
 		label
-			input.input-text(type='text' required)
+			input.input-text(type='text' ng-model="registerForm.name" required)
 			span Ваше имя
 		label
-			input.input-text(type='text' required)
+			input.input-text(type='text' ng-model="registerForm.surename" required)
 			span Фамилия
 		label
-			input.input-text.input-text--phone(type='tel' required)
+			input.input-text.input-text--phone(type='tel' ng-model="registerForm.login" required)
 			span Номер телефона
 		label
-			input.input-text(type='password' required)
+			input.input-text(type='password' ng-model="registerForm.password" required)
 			span Пароль
 		.form-checkbox
-		button.btn-submit.btn-submit--full(data-form="submit") Зарегистрироваться
+		button.btn-submit.btn-submit--full(data-form="submit"  ng-disabled="registerForm.$invalid") Зарегистрироваться

@@ -16,11 +16,12 @@ var isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 var options = {
 
   build: {
-    pages: 'build/views',
+    pages: 'build/views/',
     styles: 'build/styles/',
-    scripts: 'build/js/',
+    scripts: 'build/',
     images: 'build/images/',
-    fonts: 'build/fonts/'
+    fonts: 'build/fonts/',
+    index: 'build/',
   },
 
   src: {
@@ -41,6 +42,7 @@ var options = {
       'clean',
       'scripts',
       'styles',
+      'index',
       'pages',
       'images',
       'fonts'
@@ -55,13 +57,14 @@ var options = {
       'node_modules/jquery/dist/jquery.js',
       'node_modules/jquery-fancybox/source/js/jquery.fancybox.pack.js',
       'node_modules/flickity/dist/flickity.pkgd.js',
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/angular-ui-router/release/angular-ui-router.js',
       'src/scripts/**/*.js',
       'src/pages/blocks/**/*.js'
     ],
-    pages: [
-      'src/pages/**.jade',
-      'src/pages/account/**.jade'
-    ],
+    index: 'src/pages/index.jade',
+    pages: 'src/pages/views/**.jade',
     images: 'src/images/**/**',
     fonts: 'src/fonts/**'
   },
@@ -89,6 +92,6 @@ options.tasks.list.forEach(function(task, i, list) {
 
 
 gulp.task('build', function() {
-  return runSequence('clean', ['styles', 'scripts', 'pages', 'fonts', 'images']);
+  return runSequence('clean', ['styles', 'scripts', 'index', 'pages', 'fonts', 'images']);
 });
 

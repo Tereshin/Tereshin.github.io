@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="70" viewBox="0 0 98 70">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        fill: #2f2f30;
+      }
+
+      .cls-4 {
+        fill: #11c5ef;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>get-zen-abonement-hover</title>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g>
+          <image class="cls-2" width="98" height="70" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABGCAYAAAA3mEEuAAAACXBIWXMAAAsSAAALEgHS3X78AAADCUlEQVR4Xu2dsW4TQRRFXyKCQaECAQGJNkKioEGCD6CBHrooAiT+gS+IRA0NokxHn9pNxCdQ4gJKKkQoUDD3eDbBNs7ambXCK25xunginaOZ2W3exnA4DPP/mf8HESsNq6aKkb+5nucEYKFz4rzoiQviolkIXOEMdzgcRVk4REwGYLFL4rK4KjbEDXHTtIIjXOEMdzjE5YlBToqwJtbFFXFL3BZ3xT1xXzwwreAIVzjDHQ5xiVPc/hNjOsRRBApeF5vNwo/EE7Elnonn4oWZCW5whCuc4Q6HuMQpbkcxZoaIshvYOuvND+6Ih2JbvBKvxVvxTrw3reAIVzjDHQ5xiVPc4hjXK7NCsBs4x9hCm80PX4odsSv2RF/si4+mFRz1ozjD3U4UlzjFLY5xvToRIv7uBrYN5xlbabtZ4EOz+CcxEF/EV9MKjgZRnOEOh7jEKW5xjOvjXTEegscsbngul8dRttRus9Bn8U18Fz/EgWkFR7jCGe5wiEuc4hbHuMb5RAiOpZ64FuWmfxrlfNuLUpUFf4pf4tAsBK5whjsc4hKnuMUxrnG+Oh2CM2sjymPXlngT5ZwbRKnLwr/F0CwErnCGu0EUlzjFLY5xfXxPjIfgbZAXEZ6Befzi5t+Pct6x1Q4X+OdmEpzhDoe4xClucYxrnM8MwVshlwnPwzyGcbZx+RyEQ9SAM9zhEJc4xS2Oce0QZ4RDJMEhkuAQSXCIJDhEEhwiCQ6RBIdIgkMkwSGS4BBJcIgkOEQSHCIJDpEEh0iCQyTBIZLgEElwiCQ4RBIcIgkOkQSHSIJDJMEhkuAQSXCIJDhEEhwiCQ6RBIdIgkMkwSGS4BBJcIgkOEQSHCIJDpEEh0iCQyTBIZJQHcJDUZYLzk49FMVjgpZL9ZigXnhw1jKpGpzlUXLLpXqUnIcrLpe64YpT94THjXYHR/047bjRqV3hAbzdwVHdAN6xXbEWHkndBdzUj6Qe2xVHMTykvZ5uQ9qnYrB1/NmCOrp9tqAliD/kcXq6fcjjhCD+tE093T5tY86WP7DuLSkE3BgCAAAAAElFTkSuQmCC"/>
+          <g>
+            <rect class="cls-3" x="7" y="4" width="84" height="56" rx="5" ry="5"/>
+            <path class="cls-4" d="M86,61H12a6.007,6.007,0,0,1-6-6V9a6.007,6.007,0,0,1,6-6H86a6.007,6.007,0,0,1,6,6V55A6.007,6.007,0,0,1,86,61ZM12,5A4,4,0,0,0,8,9V55a4,4,0,0,0,4,4H86a4,4,0,0,0,4-4V9a4,4,0,0,0-4-4Z"/>
+          </g>
+        </g>
+        <path class="cls-5" d="M42.912,41V37.588l7.77-9.568H43.1V24.677h12.52v3.158l-7.954,9.753h8.116V41Z"/>
+        <path class="cls-5" d="M49.333,50.5A18.5,18.5,0,1,1,67.833,32,18.521,18.521,0,0,1,49.333,50.5Zm0-36A17.5,17.5,0,1,0,66.833,32,17.52,17.52,0,0,0,49.333,14.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

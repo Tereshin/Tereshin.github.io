@@ -2,15 +2,16 @@ extends ../template
 
 append modal-variables
 	-idModal = 'ag-enter'
+	-controllerName = 'loginCtrl'
 
 block modal-content
-	form.modal-form(data-form="form")
+	form.modal-form(data-form="form" ng-submit="loginSubmit()")
 		label
-			input.input-text.input-text--phone(type='tel' required)
+			input.input-text.input-text--phone(type='tel' ng-model="loginForm.login" required)
 			span Номер телефона
 		label
-			input.input-text(type='password' required)
+			input.input-text(type='password' ng-model="loginForm.password" required)
 			span Пароль
 		.form-descr
 			a.form-link(href='#') Забыли пароль?
-		button.btn-submit(data-form="submit") Войти
+		button.btn-submit(data-form="submit" ng-disabled="loginForm.$invalid") Войти
